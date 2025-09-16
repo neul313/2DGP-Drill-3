@@ -62,13 +62,17 @@ def bottom_triangle():
 
 
 def right_triangle():
-
+    tx = 20
+    for x in range(400,780,5):
+        y= math.tan(math.radians(50))*1.15*400-math.tan(math.radians(50))*tx -30
+        tx = tx + 5
+        draw_boy(x, y)
     pass
 
 
 def left_triangle():
     for x in range(20,400,5):
-        y=math.sin(math.radians(60))*x*1.6
+        y=math.tan(math.radians(50))*x*1.15
         draw_boy(x, y)
     pass
 
@@ -76,23 +80,23 @@ def left_triangle():
 def move_triangle():
     print("move_triangle")
     bottom_triangle()
-    right_triangle()
     left_triangle()
-    
+    right_triangle()
+
     pass
 
 
 def draw_boy(x: float, y: float):
     clear_canvas_now()
     boy.draw_now(x, y)
-    delay(0.01)
+    delay(0.05)
 
 
 while True:
     # move_rectangle()
     # move_circle()
     move_triangle()
-    break
+
     pass
 
 
