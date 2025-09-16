@@ -56,6 +56,8 @@ def move_circle():
 
 
 def bottom_triangle():
+    for x in range(780,20,-5):
+        draw_boy(x,40)
     pass
 
 
