@@ -29,6 +29,8 @@ def move_bottom():
 
 def move_left():
     print('Moving left')
+    for y in range(40, 550, 5):
+        draw_boy(20, y)
     pass
 
 
@@ -56,7 +58,7 @@ def move_circle():
 def draw_boy(x: float, y: float):
     clear_canvas_now()
     boy.draw_now(x, y)
-    delay(0.05)
+    delay(0.01)
 
 
 while True:
