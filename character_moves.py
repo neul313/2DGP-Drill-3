@@ -54,9 +54,25 @@ def move_circle():
 
     pass
 
+
+def bottom_triangle():
+    pass
+
+
+def right_triangle():
+    pass
+
+
+def left_triangle():
+    pass
+
+
 def move_triangle():
     print("move_triangle")
-
+    bottom_triangle()
+    right_triangle()
+    left_triangle()
+    
     pass
 
 
