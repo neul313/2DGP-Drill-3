@@ -54,6 +54,11 @@ def move_circle():
 
     pass
 
+def move_triangle():
+    print("move_triangle")
+
+    pass
+
 
 def draw_boy(x: float, y: float):
     clear_canvas_now()
@@ -62,8 +67,9 @@ def draw_boy(x: float, y: float):
 
 
 while True:
-    move_rectangle()
+    # move_rectangle()
     # move_circle()
+    move_triangle()
     break
     pass
 
