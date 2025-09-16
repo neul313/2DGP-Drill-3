@@ -62,13 +62,14 @@ def bottom_triangle():
 
 
 def right_triangle():
-    for x in range(20,400,5):
-        y=math.sin(math.radians(60))*x*1.6
-        draw_boy(x, y)
+
     pass
 
 
 def left_triangle():
+    for x in range(20,400,5):
+        y=math.sin(math.radians(60))*x*1.6
+        draw_boy(x, y)
     pass
 
 
