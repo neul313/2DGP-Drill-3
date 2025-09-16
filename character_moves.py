@@ -4,16 +4,17 @@ open_canvas()
 
 
 def move_rectangle():
+    print("move_rectangle")
     pass
 
 
 def move_circle():
+    print("move_circle")
     pass
 
 
 while True:
     move_rectangle()
-    
     move_circle() 
     pass
 
