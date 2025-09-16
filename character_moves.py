@@ -8,13 +8,15 @@ boy = load_image('character.png')
 
 def move_top():
     print('Moving top')
-    for x in range(0,800,5):
+    for x in range(0,780,5):
         draw_boy(x,550)
     pass
 
 
 def move_right():
     print('Moving right')
+    for y in range(550, 40, -5):
+        draw_boy(780, y)
     pass
 
 
@@ -52,7 +54,7 @@ def move_circle():
 def draw_boy(x: float, y: float):
     clear_canvas_now()
     boy.draw_now(x, y)
-    delay(0.1)
+    delay(0.05)
 
 
 while True:
